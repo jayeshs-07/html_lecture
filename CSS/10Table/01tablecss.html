@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table css</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+        }
+        td{
+            padding: 15px;
+        }
+        table{
+            width: 800px;
+            height: 150px;
+            border-collapse:collapse;
+        }
+        /* tr:nth-child(odd)*/
+        tr:nth-child(odd){
+            background-color:crimson;
+            color: aliceblue;
+        }
+        /* tr:nth-child(even)
+        tr:nth-child(even){
+            background-color: cadetblue;
+            color: aliceblue;
+        } */
+        tr:nth-child(2n+4){
+            background-color: black;
+            color: aliceblue;
+        }
+        .responsive-table{
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 10px solid black;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table in css</h1>
+    <div class="responsive-table">
+        <table>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+                <td>Test</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
