@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        div[class*="box"]{
+            height: 500px;
+            color: aliceblue;
+        }
+        .box-1{
+            background-color: teal;
+        }
+        .box-2{
+            background-color: rgb(128, 49, 0);
+        }
+        .box-3{
+            background-color: rgb(43, 128, 0);
+            /* position: relative; */
+            /* z-index: 2; */
+        }
+        .box-4{
+            background-color: rgb(15, 0, 128);
+        }
+        .box-5{
+            background-color: rgb(128, 0, 75);
+            position: relative;
+        }
+        .fixed{
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 50px;
+            position: fixed;
+            top: 10px;
+            left: 600px;
+            z-index: 1;
+        }
+        .sticky{
+            background-color: khaki;
+            color: teal;
+            font-size: 30px;
+            position: sticky;
+            top: 0;
+        }
+        div[class*="box-ab"]{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+        .box-ab-1{
+            background-color: chartreuse;
+            top: 50px;
+            left: 50px;
+        }
+        .box-ab-2{
+            background-color: coral;
+            top: 50px;
+            right: 50px;
+        }
+        .box-ab-3{
+            background-color: cadetblue;
+            bottom: 50px;
+            left: 50px;
+        }
+        .box-ab-4{
+            background-color: rgb(103, 160, 95);
+            bottom: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="fixed">Fixed Position</div>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3
+
+        <div class="sticky">Position Sticky</div>
+    </div>
+    <div class="box-4">
+        box-4
+    </div>
+    <div class="box-5">Box-5
+
+        <div class="box-ab-1">box-ab-1</div>
+        <div class="box-ab-2">box-ab-2</div>
+        <div class="box-ab-3">box-ab-3</div>
+        <div class="box-ab-4">box-ab-4</div>
+    </div>
+</body>
+</html>
