@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .banner{
+    display: flex;
+        justify-content: center;
+   }
+    .top_banner img{
+        width: 300px;
+        
+    }
+    .second_banner{
+        width: 100%;
+        display: flex;
+       justify-content: center;
+        position: relative;
+    }
+    .left_banner img{
+        width: 400px;
+       height: 300px;
+        z-index: -1;
+    }
+    .right_banner img{
+        width: 400px;
+        height: 300px;
+       margin-left: 50px;
+       z-index: -5;
+    }
+    .left{
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        margin-right: 1000px;
+        margin-top: 50px;
+        z-index: 5;
+    }
+    .right{
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        margin-left: 1000px;
+        margin-top: 50px;
+        z-index: 5;
+    }
+    .center{
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        margin-right: 0px;
+        margin-top: 50px;
+        z-index: 5;
+    }
+    .top_img{
+        display: flex;
+             
+    }
+</style>
+<body>
+    <div class="banner">
+        <div class="top_banner">
+            <img src="../../Images/hotel.webp" alt="">
+        </div>
+    </div>
+    
+    <div class="second_banner">
+        <div class="top_img">
+
+        </div>
+        <img src="/Images/BOUGAINVILLE.webp" alt="" class="left">
+        <img src="/Images/BOUGAINVILLE.webp" alt="" class="center">
+        <img src="/Images/BOUGAINVILLE.webp" alt="" class="right">
+        <div class="left_banner">
+            <img src="/Images/hoteldining.jpg" alt="">
+        </div>
+        <div class="right_banner">
+            <img src="/Images/hoteldining2.jpg" alt="">
+        </div>
+       
+            
+       
+        <div class="center">
+    
+        </div>
+        <div class="right">
+    
+        </div>
+    </div>
+</body>
+</html>
