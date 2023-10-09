@@ -40,3 +40,37 @@
     text-align: center;
     width: 70%;
 }
+.third-section{
+    background-color: #b13941;
+    background-image: url(../img/Shape.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.logo_brand img{
+    width: 20%;
+    float: left;
+}
+.gift-section{
+    width: 80%;
+    float: left;
+    padding: 50px;
+    color: aliceblue;
+   
+}
+.gift-section p{
+    text-align: left;
+    padding-top: 20px;
+}
+.gift-section button{
+    background-color: aliceblue;
+    color: #b13941;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    margin-top: 10px;
+}
