@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    background-color: #b13941;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-image: url(../img/Shape.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.menu li, a{
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    font-family: "PT Serif";
+}
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+.banner_content{
+    width: 100%;
+    height: 450px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner_content h1,p{
+    color: aliceblue;
+    text-align: center;
+    width: 70%;
+}
