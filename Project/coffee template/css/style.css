@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: #000 !important;
+}
+.menu{
+    background-color: #b13941;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-image: url(../img/Shape.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.menu li, a{
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    font-family: "PT Serif";
+}
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+.banner_content{
+    width: 100%;
+    height: 450px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner_content {
+    color: aliceblue !important; 
+    text-align: center;
+    width: 70%;
+}
+.third-section{
+    background-color: #b13941;
+    background-image: url(../img/Shape.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    padding: 50px;
+}
+.third-section , .container{
+    display: flex;
+    align-items: center;
+}
+.logo_brand img{
+    width: 60%;
+    float: right;
+}
+.gift-section{
+    width: 80%;
+    float: left;
+    padding: 50px;
+    color: aliceblue;
+   
+}
+.gift-section p{
+    text-align: left;
+    padding-top: 20px;
+}
+.gift-section button{
+    background-color: aliceblue;
+    color: #b13941;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    font-weight: 700;
+    font-family: "PT Serif";
+    text-align: center;
+    margin-top: 10px;
+}
+.story-section{
+    width: 100%;
+    height: 400px;
+}
+.story-img>img{
+    width: 35%;
+    height: 400px;
+    float: left;
+}
+.story-content{
+    width: 50%;
+    float: left;
+    padding: 45px;
+
+}
+.story-inner h3{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+.story-inner p{
+    /* width: 65%; */
+    padding-top: 30px;
+    padding-left: 40px;
+    text-align: left !important;
+    color: black !important;
+}
+.story-link{
+    padding-left: 40px;
+    line-height: 20px;
+    color: rgb(172, 33, 33);
+}
+.story-link:hover{
+    color: rgb(172, 33, 33);
+    text-decoration: underline;
+}   
+.menu_section{
+    width: 100%;
+    text-align: center;
+}
+.menu_inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.menu_inner p{
+    text-align:center !important;
+    color: #000000 !important;
+}
