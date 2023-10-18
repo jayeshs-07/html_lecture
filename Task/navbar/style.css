@@ -23,10 +23,11 @@
     display: flex;
     padding: 10px;
 }
-.icon{
+.search > .icon{
     display: none;
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
 
+    
 }
