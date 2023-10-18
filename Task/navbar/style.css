@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    background-color: blue;
+    color: aliceblue;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+
+}
+.menu li{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+.icon{
+    display: none;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+}
