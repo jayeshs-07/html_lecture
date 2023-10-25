@@ -28,6 +28,10 @@
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-
-    
+    .icon{
+        display: inline-block;
+    }
+    .menu{
+        display: inline-block;
+    }
 }
