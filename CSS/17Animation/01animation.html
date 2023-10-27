@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation In CSS</title>
+    <style>
+        .box{
+            width:300px;
+            height: 300px;
+            border: 4px solid rgb(230, 226, 1);
+            background-color: blueviolet;
+            animation-name: Movebox;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+            animation-direction:alternate;
+            animation-timing-function: linear;
+            animation-timing-function:ease-in;
+        }
+        @keyframes Movebox{
+            from{
+                margin-top: 300px;
+                margin-left: 30px;
+            }
+            to{
+                margin-bottom: 300px;
+                margin-left: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Animation In CSS</h2>
+    <div class="box"></div>
+</body>
+</html>
