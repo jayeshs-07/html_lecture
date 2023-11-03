@@ -7,7 +7,7 @@
     width: 100%;
     background-color: blue;
     color: aliceblue;
-    padding: 20px;
+    padding: 10px;
 }
 .row{
     display: flex;
@@ -16,16 +16,41 @@
 }
 .menu{
     display: flex;
-
+    justify-content: center;
+    width: 100%;
 }
 .menu li{
     list-style: none;
     display: flex;
     padding: 10px;
+    font-size: larger;
+    margin-left: 30px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.dropdown_menu_item{
+    background-color: aliceblue;
+    display: none;
+    cursor: pointer;
+    /* margin-top: 30px; */
+    position: absolute;
+    z-index: 1;
+}
+.dropdown:hover .dropdown_menu_item{
+    width: 200px;
+    margin-top: 40px;
+    display: block;
+    cursor: pointer;
+    color: black;
 }
 .search > .icon{
     display: none;
 }
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .icon{
