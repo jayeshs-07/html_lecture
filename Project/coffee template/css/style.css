@@ -55,6 +55,8 @@ p{
     background-image: url(../img/banner.jpg);
     background-size: cover;
     opacity: 2;
+    background-color: #000;
+    opacity: 1;
     /* background-position: center; */
 }
 .banner_content{
@@ -66,10 +68,17 @@ p{
     justify-content: center;
     align-items: center;
 }
-.banner_content > .banner_title .banner_para{
+.banner_content :where(.banner_title) ,.banner_para  {
     color: aliceblue !important; 
     text-align: center;
     width: 70%;
+}
+.btn{
+    padding: 20px;
+    border: none;
+    margin-top: 20px;
+    background-color: #b13941;
+    color: #ffffff;
 }
 .container > .row{
 
@@ -101,8 +110,9 @@ p{
     color: aliceblue;
    
 }
-.gift-section p{
+.gift-section:where(.gift-title), .gift-para{
     text-align: left;
+    color: #ffffff !important;
     padding-top: 20px;
 }
 .gift-section button{
@@ -115,6 +125,7 @@ p{
     font-family: "PT Serif";
     text-align: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 .story-section{
     width: 100%;
@@ -157,6 +168,10 @@ p{
 .menu_section{
     width: 100%;
     text-align: center;
+    background: url(../img/Shape2.png);
+    background-color: #b13941;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .menu_inner{
     width: 100%;
@@ -169,23 +184,29 @@ h4{
     font-size: 58px;
     font-family: "Yeseva One";
 }
-.menu_inner h4 , p{
-
-    text-align:center !important;
-    color: #000000 !important;
+.menu_inner , .menu-para{
+    text-align:center;
+    color: #ffffff !important;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 10px;
 }
 .card {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 500px;
+    width: 33.33%;
     background-color: aliceblue;
-    box-shadow: -1px 0px 9px 1px black;
+    filter: drop-shadow(11.437px 17.612px 12px rgba(12,13,12,0.1));
 }
-.card-img img{
-    width: 300px;
-}
+
+
 .card-text{
     text-align: left;
-    font-size: 18px;
+    font-size: 12px;
+    padding: 25px;
+}
+.card-title{
+    color: #000;
+    font-size: 33px;
 }
