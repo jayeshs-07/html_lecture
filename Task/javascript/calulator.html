@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .Calculator_section{
+            background-color:white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 6px -2px;
+        }
+        .field_section{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+        .input_field{
+            margin-top: 25px;
+        }
+        input{
+            height: 30px;
+        }
+        .button_section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .button_section button{
+            width: 80px;
+            margin-left: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            background-color:brown;
+            color: aliceblue;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="Calculator_section">
+        <div class="field_section">
+            <div class="input_field">
+                <label for="">First Value :</label>
+                <input type="text" placeholder="Enter First Number" name="fname" id="fname" ><br>
+            </div>
+            <div class="input_field">
+                <label for="">Second Value :</label>
+                <input type="text" placeholder="Enter Second Number" name="sname" id="sname">
+            </div>
+            <div class="button_section">
+                <button onclick="add()">+</button>
+                <button onclick="minus()">-</button>
+                <button onclick="multi()">*</button>
+                <button onclick="divide()">/</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- script here -->
+    <script>
+        function add(){
+            let a= document.getElementById('fname').value;
+            let b= document.getElementById('sname').value;
+            sum =parseFloat(a) + parseFloat(b);
+            alert(sum)
+        }
+        function minus(){
+            let a= document.getElementById('fname').value;
+            let b= document.getElementById('sname').value;
+            sum =parseFloat(a) - parseFloat(b);
+            alert(sum)
+        }
+        function multi(){
+            let a= document.getElementById('fname').value;
+            let b= document.getElementById('sname').value;
+            sum =parseFloat(a) * parseFloat(b);
+            alert(sum)
+        }
+        function divide(){
+            let a= document.getElementById('fname').value;
+            let b= document.getElementById('sname').value;
+            sum =parseFloat(a) / parseFloat(b);
+            alert(sum)
+        }
+    </script>
+</body>
+</html>
