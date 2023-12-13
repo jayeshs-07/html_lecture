@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word count task</title>
+</head>
+<body>
+    <h1>Word count In JS</h1>
+    <div class="view">
+       <input type="text" id="view" placeholder="plz type any ">
+    </div>
+    <button id="UpperCase"  onclick="UpperCase()">
+        Upper Case
+    </button>
+    <button id="LowerCase"  onclick="LowerCase()">
+        Lower Case
+    </button>
+    <button id="UpperCase"  onclick="wordcount()">
+        Word Count
+    </button>
+    <button id="UpperCase"  onclick="UpperCase()">
+       Extra Space
+    </button>
+    <button id="UpperCase"  onclick="UpperCase()">
+       Character Count
+    </button>
+    <button id="UpperCase"  onclick="UpperCase()">
+      Find and replace
+    </button>
+    <script>
+         function UpperCase(){
+            let a= document.getElementById('view').value;
+              console.log(a.toUpperCase());
+         }
+         function LowerCase(){
+            let a= document.getElementById('view').value;
+              console.log(a.toLowerCase());
+         }
+    </script>
+</body>
+</html>
