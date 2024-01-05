@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide show</title>
+    <style>
+        .continer{
+            background-color: #216db4;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Hide Show and Toggle in jquery</h1>
+    <button class="btnhide">Hide</button>
+    <button class="btnshow">Show</button>
+    <button class="btntoggle">Toggle</button>
+
+    <div class="continer">
+
+    </div>
+
+    <!-- jquery script  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- script  -->
+
+    <script>
+        $('*').css({
+            margin:"0",
+            padding:"0",
+            boxsizing:"border-box",
+        });
+        $('body').css({
+            backgroundColor: "lightgray",
+            textAlign: "center",
+            
+        });
+        $('button').css({
+           padding:"20px",
+           margin:"10px",
+           backgroundColor:"#216db4",
+        border:"none",
+        });
+        $('h1').css({
+            color:"blue",
+        })
+        $(".continer").css({
+        backgroundColor: "aqua",
+        color: "black",
+        padding: "10px",
+        height: "100px",
+        fontSize: "25px",
+      });
+    
+    
+    </script>
+    <!-- jquery here -->
+    <script>
+        $(document).ready(function(){
+            $('.btnhide').click(function () {
+                $('.continer').hide()
+                console.log("Hide Continer");
+            })
+      })
+        $(document).ready(function(){
+            $('.btnshow').click(function () {
+                $('.continer').show()
+                console.log("Show Continer");
+            })
+      })
+        $(document).ready(function(){
+            $('.btntoggle').click(function () {
+                $('.continer').toggle()
+                console.log("Show Continer");
+            })
+      })
+    </script>
+</body>
+</html>
