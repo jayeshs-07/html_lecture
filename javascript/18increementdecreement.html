@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment decrement</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin: 20px 70px;
+        }
+        button{
+            color: rgb(241, 239, 239);
+            background-color: rgb(189, 47, 22);
+            border: none;
+            justify-content: space-evenly;
+            margin-right: 50px;
+            margin-left: 50px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="Prev()">Previous</button>
+    <button onclick="Next()">Next</button>
+    <!-- <button onclick="increment()" id="dark">increment</button>
+    <button onclick="decrement()" id="light">decrement</button> -->
+
+    <script>
+            let a = ["red","green","blue","grey","violet"];
+        let i=-1;
+        
+
+
+        function Next() {
+            if (i <= a.length-2) {
+                i++;
+                let b=document.getElementById('box');
+                b.style.backgroundColor=a[i];
+                console.log(a[i]); 
+            } else {
+                
+            }
+           
+        }
+
+        function Prev() {
+            
+            if (i > 0) {
+                i--
+                let b=document.getElementById('box');
+                b.style.backgroundColor=a[i];
+                console.log(a[i]); 
+            } else {
+                
+            }
+           
+        }
+    </script>
+</body>
+</html>
