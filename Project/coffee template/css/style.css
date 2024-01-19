@@ -201,7 +201,8 @@ h4{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 30%;
+    width: 33%;
+    height: 312px;
     margin-left: 8px;
     background-color: aliceblue;
     filter: drop-shadow(11.437px 17.612px 12px rgba(12,13,12,0.1));
@@ -224,19 +225,27 @@ h5{
     font-size: 58px;
     font-family: "Yeseva One";
     text-align: center;
+    color: #b13941;
 }
 .store-para{
-    color: #000;
+    color: #b13941 !important;
     text-align: center;
+    font-size: 21px;
+    line-height: 33px;
+    display: block;
+    position: relative;
 }
 .card_store {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 30%;
+    width: 26%;
     margin-left: 8px;
     background-color: aliceblue;
     filter: drop-shadow(11.437px 17.612px 12px rgba(12,13,12,0.1));
+}
+.card-para{
+    font-size: 17px;
 }
 .btn_view{
     padding: 20px;
@@ -245,4 +254,29 @@ h5{
     background-color: #b13941;
     color: #ffffff;
     text-align: center;
+    display: flex;
+}
+.company_section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        background-color: #b13941;
+        background: url(../img/Shape2.png);
+}
+.compnay_profile{
+    display: flex;
+    width: 100%;
+}
+.video_company{
+    display: flex;
+    width: 50%;
+}
+.company_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
 }
