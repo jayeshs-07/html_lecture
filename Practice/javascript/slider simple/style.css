@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.slide{
+    display: none;
+}
+.slider-contanier{
+    width: 100%;
+    position: relative;
+}
+.slide-text{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.arrow{
+    position: absolute;
+    top: 40%;
+}
+.arrow{
+    background-color: white;
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+.right{
+    right: 0px;
+}
