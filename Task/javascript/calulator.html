@@ -7,7 +7,7 @@
     <style>
         .Calculator_section{
             background-color:white;
-            width: 100%;
+            width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,6 +18,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             padding: 50px;
         }
         .input_field{
@@ -43,6 +44,12 @@
             color: aliceblue;
             border: none;
         }
+        #display{
+            margin-top: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 15px 40px;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +62,9 @@
             <div class="input_field">
                 <label for="">Second Value :</label>
                 <input type="text" placeholder="Enter Second Number" name="sname" id="sname">
+            </div>
+            <div id="display">
+                
             </div>
             <div class="button_section">
                 <button onclick="add()">+</button>
@@ -72,23 +82,29 @@
             let b= document.getElementById('sname').value;
             sum =parseFloat(a) + parseFloat(b);
             alert(sum)
+            document.getElementById('display').innerHTML = sum;
+            console.log(a);
+            console.log(b);
         }
         function minus(){
             let a= document.getElementById('fname').value;
             let b= document.getElementById('sname').value;
             sum =parseFloat(a) - parseFloat(b);
+            document.getElementById('display').innerHTML = sum;
             alert(sum)  
         }
         function multi(){
             let a= document.getElementById('fname').value;
             let b= document.getElementById('sname').value;
             sum =parseFloat(a) * parseFloat(b);
+            document.getElementById('display').innerHTML = sum;
             alert(sum)
         }
         function divide(){
             let a= document.getElementById('fname').value;
             let b= document.getElementById('sname').value;
             sum =parseFloat(a) / parseFloat(b);
+            document.getElementById('display').innerHTML = sum;
             alert(sum)
         }
     </script>
