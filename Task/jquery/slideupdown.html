@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide up and down in jquery</title>
+</head>
+
+<body>
+    <h1>Slide up and down in jquery</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque ea possimus alias, saepe
+            necessitatibus.</p>
+    </div>
+    <button id="btnslideup">Slide up</button>
+    <button id="btnslidedown">Slide Down</button>
+    <button id="btnslidetoggle">Slide Toggle</button>
+    <!--download Jquery-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        // Hide
+        $(document).ready(function () {
+            $("#btnslideup").click(function(){
+                $(".box").slideUp();
+                console.log("hide");
+            });
+        });
+        $(document).ready(function () {
+            $("#btnslidedown").click(function(){
+                $(".box").slideDown();
+                console.log("show");
+            });
+        });
+        $(document).ready(function () {
+            $("#btnslidetoggle").click(function(){
+                $(".box").slideToggle();
+                console.log("toggle");
+            });
+        });
+    </script>
+
+    </script>
+    <!-- cdn jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
