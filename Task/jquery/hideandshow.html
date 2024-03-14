@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and show in jquery</title>
+</head>
+
+<body>
+    <h1>Hide And Show in jquery</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet itaque ea possimus alias, saepe
+            necessitatibus.</p>
+    </div>
+    <button id="btnhide">Hide</button>
+    <button id="btnshow">Show</button>
+    <button id="btntoggle">Toggle</button>
+    <!--download Jquery-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        // Hide
+        $(document).ready(function () {
+            $("#btnhide").click(function(){
+                $(".box").hide();
+                console.log("hide");
+            });
+        });
+        $(document).ready(function () {
+            $("#btnshow").click(function(){
+                $(".box").show();
+                console.log("show");
+            });
+        });
+        $(document).ready(function () {
+            $("#btntoggle").click(function(){
+                $(".box").toggle();
+                console.log("toggle");
+            });
+        });
+    </script>
+
+    </script>
+    <!-- cdn jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
