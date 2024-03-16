@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate in jquery</title>
+</head>
+<body>
+    <h1>Animate in jquery</h1>
+    <button class="btnSlideUp">Please click me</button>
+    <div class="box">You Wanna See Some Magic In jQuery</div>
+
+    <!-- jquery added here  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <script>
+          $(".box").css({
+        backgroundColor: "crimson",
+        color: "khaki",
+        padding: "10px",
+        margin: "10px",
+        height: "300px",
+        fontSize: "25px",
+      });
+    </script>
+
+<script>
+    $(document).ready(function () {
+
+        $('.btnSlideUp').hover(function () {
+            $('.box').css({ backgroundColor:"green", width:"1000px"},2000)
+        })
+
+
+        $('.btnSlideDown').click(function () {
+            $('.box').slideDown(1000)
+        })
+
+
+        $('.btnSlideToggle').click(function () {
+            $('.box').slideToggle(1000)
+        })
+    })
+    
+</script>
+</body>
+</html>
