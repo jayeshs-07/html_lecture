@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate in jquery</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Animate in jquery</h1>
+    <button class="btnanimate">Please click me</button>
+    <div class="box">You Wanna See Some Magic In jQuery</div>
+
+    <!-- jquery added here  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <script>
+          $(".box").css({
+        backgroundColor: "crimson",
+        width:"1000px",
+        color: "khaki",
+        height: "300px",
+        fontSize: "25px",
+      });
+    </script>
+    
+<script>
+    $(document).ready(function () {
+        $('.btnanimate').click(function () {
+            $('.box').animate({ backgroundColor:"green", width:"1200px"},2000)
+        })
+    });   
+</script>
+</body>
+</html>
